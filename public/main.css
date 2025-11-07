@@ -1,0 +1,212 @@
+body{
+    background: #d3d7e4;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+h1{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 30px;
+    align-self: flex-start;
+}
+h2{
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+@keyframes titleJumpAnimation {
+    from {margin-top: 5px;}
+    to { margin-top: 6px;}
+}
+
+#titleCont{
+    align-self: flex-start;
+    margin-left: 30px;
+    margin-top: 60px;
+    padding-right: 10px;
+    border-bottom: deepskyblue solid 2px;
+    border-right: deepskyblue 3px solid;
+}
+
+#titleBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+#title{
+    display: flex;
+    font-size: 50px;
+    align-self: flex-end;
+    animation-name: titleJumpAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#searchContainer{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+input[type=text]{
+    border: none;
+    border-bottom: 1px solid deepskyblue;
+}
+
+:focus{
+    outline: none;
+}
+/*^Gets rid of standard outline border when clicked on input tag^*/
+#cityInput::placeholder{
+    color: darkgray;
+    transition: padding-left ease-in 1s, padding-right ease-out 1s, color ease-in 0.5s, color ease-out 0.5s;
+}
+#cityInput:hover::placeholder{
+    padding-left: 5px;
+    padding-right: 0;
+    color: #020260;
+}
+
+
+/*^Placeholder text^*/
+#searchButton{
+    border: deepskyblue solid 1px;
+    color: black;
+    box-shadow: 2px 2px 8px rgba(0, 26, 255, 0.2);
+    background-color: transparent;
+}
+#searchButton:active{
+    background-color: #98a1b6;
+}
+#searchButton:hover{
+    box-shadow: 2px 2px 8px rgba(0, 26, 255, 0.3);
+}
+
+
+.titleContainer{
+    justify-content: flex-start;
+    align-content: center;
+    margin-right: 10rem;
+    flex-direction: column;
+    position: static;
+    top: 7rem;
+    left: 5rem;
+    border-radius: 10px;
+    outline: 2px solid deepskyblue;
+    text-align: left;
+    padding-left: 1%;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+
+    z-index: 1;
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background: #d3d7e4;
+    /*flex-wrap: wrap; puts the elements below eachother when width gets too small*/
+    z-index: 10;
+    margin-right: 20vh;
+}
+
+#bodyContainer{
+    width: 90%;
+    max-width: 400px;
+    height: 65vh;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 37, 81, 0.2);
+    z-index: 1;
+}
+
+#cityName{
+    display: flex;
+    justify-content: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 500;
+    margin-top: 10vh;
+    margin-bottom: 5rem;
+    color: #fff;
+    animation: glow 2s ease-in-out infinite alternate
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #a8f3ff, 0 0 20px #0b8db6, 0 0 30px rgb(211, 250, 255), 0 0 40px #d3faff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #a8f3ff, 0 0 30px #98a1b6, 0 0 40px rgb(11, 141, 182), 0 0 50px #0b8db6;
+    }
+
+}
+
+
+#description{
+    display: flex;
+    justify-content: center;
+    font-family: "Pixelify Sans", sans-serif;
+    margin-bottom: -1rem;
+    font-size: 22px;
+}
+
+#temperature{
+    display: flex;
+    justify-content: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 18px;
+}
+
+#spritesContainer{
+    /*border: deepskyblue solid 1px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+
+.pixelSprites{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn{
+    from{opacity : 0; transform: scale(0.95);}
+    to  {opacity : 1; transform: scale(1);}
+}
+
+/*#pixelSpriteClouds{*/
+/*    display: flex;*/
+/*    align-self: flex-end;*/
+/*    justify-self: center;*/
+/*    z-index: 0;*/
+/*}*/
+
+
+
+.pixelify-sans-fontPixel {
+                    font-family: "Pixelify Sans", sans-serif;
+                    font-optical-sizing: auto;          /* adding pixel font */
+                    font-weight: 400;
+                    font-style: normal;
+}
+
+#duckGif{
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    width: 8vh;
+}

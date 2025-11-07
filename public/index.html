@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">   <!-- Implement pixel font -->
+</head>
+<body>
+
+
+
+<div class="wrapper">
+    <!--    <img id="pixelSpriteClouds" src="https://i.pinimg.com/originals/b6/e3/ef/b6e3ef535fc0f404923b5f939d367b9a.gif" alt="pixel gif clouds moving left->right">-->
+
+
+    <div id="titleCont">
+        <button id="titleBtn" onclick="funAlert()">
+            <h1 id="title">Weather App</h1>
+        </button>
+    </div>
+
+
+    <div class="titleContainer">
+        <h1>Welcome to your little <br> pixelated weather teller!</h1>
+        <h1>+ Little animations</h1>
+        <h2>Enter your location and you'll see.. &#128523;</h2> <!-- Smiley tongue to the side input -->
+        <img id="duckGif" src="https://media.tenor.com/GVbLnw73qD8AAAAj/dancing-duck-karlo.gif" alt="pixel duck with hat idle animation gif">
+    </div>
+
+<!--    <img class="pixelSprites" src="https://i.pinimg.com/originals/c0/ec/36/c0ec362876040a99a1be29080e572bff.gif" alt="pixel duck with hat dancing animation gif">-->
+
+
+    <div id="bodyContainer">
+        <div id="searchContainer">
+            <input type="text" id="cityInput" placeholder="Enter city name..">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div id="weatherInfo">
+            <h1 id="cityName"></h1>
+            <p id="description"></p>
+            <p id="temperature"></p>
+        </div>
+
+        <div id="spritesContainer">
+<!--            <img class="pixelSprites" src="https://art.pixilart.com/8ef5f20196552d5.gif" alt="pixel gif rain cloud ">-->
+<!--            <img class="pixelSprites" src="https://i.gifer.com/origin/0d/0d6cf5b4980702758a616a14bed86e3a_w200.gif" alt="pixel gif clouds">-->
+<!--            <img class="pixelSprites" src="https://i.pinimg.com/originals/c7/44/6d/c7446dc4ebdbc98bc69be7de0ae0aae2.gif" alt="pixel gif clouds + rainbow">-->
+<!--            <img class="pixelSprites" src="https://art.pixilart.com/b51a387e10490f6.png" alt="pixel  cloud + lightning png">-->
+<!--            <img class="pixelSprites" src="https://static.vecteezy.com/ti/gratis-vector/p1/10512339-wolken-hemel-pixel-gratis-vector.jpg" alt="pixel fog/2 grey clouds overlapping  png">-->
+<!--            <img class="pixelSprites" src="https://senageng.carrd.co/assets/images/gallery01/f8a26e1c.gif?v=914abad4" alt="pixel gif happy sun">-->
+<!--            <img class="pixelSprites" src="https://img1.picmix.com/output/stamp/normal/3/3/2/7/2167233_27d86.gif" alt="pixel gif snow falling">-->
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+<script src="weather.js"></script>
+</body>
+</html>
