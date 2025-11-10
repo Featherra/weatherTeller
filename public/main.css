@@ -1,5 +1,5 @@
 :root{
-    --bg-color: #d3d7e4;
+    --bg-color: #c3cce8;
     --text-color: #000;
 }
 
@@ -18,6 +18,8 @@ body{
     height: 100%;
     overflow: hidden; /* Gets rid of the scrollbar that shows */
     transition: ease-in-out 1s;
+
+
 }
 
 
@@ -120,8 +122,6 @@ input[type=text]{
     height: auto;
     background: var(--bg-color);
 
-    z-index: 1;
-
 }
 
 .wrapper{
@@ -132,6 +132,7 @@ input[type=text]{
     /*flex-wrap: wrap; puts the elements below eachother when width gets too small*/
     z-index: 10;
     margin-right: 20vh;
+
 }
 
 #bodyContainer{
