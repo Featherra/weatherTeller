@@ -1,9 +1,26 @@
-body{
-    background: #d3d7e4;
-    height: 100%;
-    z-index: 1;
-    overflow: hidden;
+:root{
+    --bg-color: #d3d7e4;
+    --text-color: #000;
 }
+
+
+body.night{
+    --bg-color: rgba(0, 9, 101, 0.65);
+    --text-color: #fff;
+    overflow: hidden; /* Gets rid of the scrollbar that shows */
+    transition: background-color ease 1s, color ease 1s;
+
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    height: 100%;
+    overflow: hidden; /* Gets rid of the scrollbar that shows */
+    transition: ease-in-out 1s;
+}
+
+
 
 h1{
     font-family: 'Pixelify Sans', sans-serif;
@@ -42,6 +59,7 @@ h2{
     animation-name: titleJumpAnimation;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    color: var(--text-color);
 }
 
 #searchContainer{
@@ -63,6 +81,7 @@ input[type=text]{
     color: darkgray;
     transition: padding-left ease-in 1s, padding-right ease-out 1s, color ease-in 0.5s, color ease-out 0.5s;
 }
+
 #cityInput:hover::placeholder{
     padding-left: 5px;
     padding-right: 0;
@@ -73,7 +92,7 @@ input[type=text]{
 /*^Placeholder text^*/
 #searchButton{
     border: deepskyblue solid 1px;
-    color: black;
+    color: var(--text-color);
     box-shadow: 2px 2px 8px rgba(0, 26, 255, 0.2);
     background-color: transparent;
 }
@@ -99,7 +118,7 @@ input[type=text]{
     padding-left: 1%;
     width: auto;
     height: auto;
-    background-color: #fff;
+    background: var(--bg-color);
 
     z-index: 1;
 
@@ -110,7 +129,6 @@ input[type=text]{
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    background: #d3d7e4;
     /*flex-wrap: wrap; puts the elements below eachother when width gets too small*/
     z-index: 10;
     margin-right: 20vh;
@@ -121,7 +139,7 @@ input[type=text]{
     max-width: 400px;
     height: 65vh;
     padding: 2rem;
-    background-color: #fff;
+    background: var(--bg-color);
     border-radius: 10px;
     box-shadow: 0 4px 14px rgba(0, 37, 81, 0.2);
     border: deepskyblue solid 1px;
@@ -182,6 +200,7 @@ input[type=text]{
     height: 90%;
     opacity: 0;
     animation: fadeIn 1s ease forwards;
+    border-radius: 10px;
 }
 
 @keyframes fadeIn{
