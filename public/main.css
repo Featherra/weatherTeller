@@ -40,8 +40,8 @@ h2{
 
 #titleCont{
     align-self: flex-start;
-    margin-left: 30px;
-    margin-top: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
     padding-right: 10px;
     border-bottom: deepskyblue solid 2px;
     border-right: deepskyblue 3px solid;
@@ -136,9 +136,9 @@ input[type=text]{
 }
 
 #bodyContainer{
-    width: 90%;
+    width: 100%;
     max-width: 400px;
-    height: 65vh;
+    height: auto;
     padding: 2rem;
     background: var(--bg-color);
     border-radius: 10px;
