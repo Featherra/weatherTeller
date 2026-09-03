@@ -22,9 +22,6 @@ With the little animations and gifs, It's really brought to life.
 <br> I think this one is pretty straightforward, this will most likely take a lot of time but I'll learn a lot from it.
 <br> I want to become better at responsiveness and at understanding it. So, perfect learning curve right?
 
-## To get started
-* Run 'Npm install'
-* Then in the terminal run: 'npm start'
 
 ## Untill then...
 Even though it's not finished yet, It's got the main point ready and set to take a peek at.
